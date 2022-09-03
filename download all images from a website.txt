@@ -1,0 +1,25 @@
+Download All Images from a Web Page in Python
+
+This application is designed to take a website link as an input and download Images from that website
+
+While starting the program we supply the website name like https://www.growpital.com
+our program scanned for all links available in the page and traverse them as well.
+
+Modules and Libraries Needed
+bs4: Beautiful Soup(bs4) is a Python library for pulling data out of HTML and XML files.
+requests:  Requests allows you to send HTTP/1.1 requests extremely easily.
+os: The OS module in python provides functions for interacting with the operating system.
+
+Working of the application
+1) Import module
+2) Get HTML Code
+3) Get list of img tags from HTML Code using findAll method in Beautiful Soup.
+4) Create separate folder for downloading images using mkdir method in os.
+5) Iterate through all images and get the source URL of that image.
+6) After getting the source URL, last step is download the image
+7) Fetch Content of Image
+8) Download image using File Handling
+9) For each page scan for available images and download them in a folder.
+10) It Do not download the same image twice.
+11) Do not traverse the same link twice.
+12) Only traverse the pages of given domain Only download the images of given domain.
